@@ -31,3 +31,9 @@ h1 {
   --secondary-color: 86, 99, 247;
   --third-color: 88, 101, 242;
 }
+
+@media (min-width: 2000px) {
+  html {
+    font-size: 1.5em;
+  }
+}

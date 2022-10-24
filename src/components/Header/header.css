@@ -2,10 +2,11 @@
     height: 40rem;
     width: 100%;
     display: flex;
-    justify-content: center;
+    align-items: center;
     gap: 5rem;
     text-align: center;
     padding-top: 2rem;
+    flex-direction: column;
 }
 
 .header-bg {
@@ -28,11 +29,16 @@
 /* First layer */
 .header-first-layer {
     height: 7rem;
-    width: 100%;
     gap: 10rem;
 }
 .header-first-layer img{
     width: 6rem;
+}
+
+@media (max-width: 40em) {
+    .header-first-layer {
+        gap: 2rem;
+    }
 }
 
 /* Second layer */
