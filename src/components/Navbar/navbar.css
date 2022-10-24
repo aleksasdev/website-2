@@ -8,10 +8,11 @@
     padding-right: 3rem;
     padding-left: 3rem;
     padding-top: 0.5rem;
-    border: 2px solid rgb(var(--primary-color));
+    border: 3px solid rgb(var(--primary-color));
     border-top: none;
     margin-left: 5%;
     margin-right: 5%;
+    font-size: 1.2em;
 }
 
 #nav-button {
@@ -28,6 +29,9 @@
 }
 
 @media (max-width: 40em) {
+    .navbar-container {
+        justify-content: center;
+    }
     .navbar-logo {
         display: none;
     }

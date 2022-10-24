@@ -1,13 +1,13 @@
 @font-face {
-  font-family: 'main';
+  font-family: 'primary-font';
   src: url(./assets/dela-gothic-regular.ttf);
 }
 @font-face {
-  font-family: 'main-bold';
-  src: url(./assets/uni-sans-bold.otf);
+  font-family: 'secondary-font';
+  src: url(./assets/Montserrat-Light.otf);
 }
 @font-face {
-  font-family: 'main-heavy';
+  font-family: 'third-font';
   src: url(./assets/uni-sans-heavy.otf);
 }
 
@@ -16,19 +16,14 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: main;
+  font-family: primary-font;
   color: rgb(var(--text-color));
-}
-
-h1 {
-  font-family: main-heavy;
-  font-size: 3em;
 }
 
 :root {
   --text-color: 255, 255, 255;
   --primary-color: 255, 237, 134;
-  --secondary-color: 86, 99, 247;
+  --secondary-color: 248, 242, 169;
   --third-color: 88, 101, 242;
 }
 
