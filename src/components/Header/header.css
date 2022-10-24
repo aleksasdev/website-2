@@ -3,9 +3,9 @@
     width: 100%;
     display: flex;
     justify-content: center;
-    align-items: center;
     gap: 5rem;
     text-align: center;
+    padding-top: 2rem;
 }
 
 .header-bg {
@@ -20,17 +20,25 @@
     width: 35rem;
 }
 
-@media (max-width: 1400px) {
-    .header-container {
-        gap: 0;
-    }
-
-    .character-2 {
-        display: none;
-    }
+#layer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* First layer */
+.header-first-layer {
+    height: 7rem;
+    width: 100%;
+    gap: 10rem;
+}
+.header-first-layer img{
+    width: 6rem;
 }
 
-@media (max-width: 40em) {
+/* Second layer */
+
+
+/* @media (max-width: 40em) {
     .header-container {
         flex-direction: column-reverse;
     }
@@ -38,7 +46,7 @@
     .character-1 {
         width: 25rem;
     }
-}
+} */
 
 /* @media (min-width: 1940px) {
     .header-container {
