@@ -6,6 +6,9 @@ import pluses from '../../assets/pluses.png'
 import circle from '../../assets/circle.png'
 import pointingTriangleRight from '../../assets/pointing-triangle-right.png'
 import pointingTriangleLeft from '../../assets/pointing-triangle-left.png'
+import underline from '../../assets/underline.png'
+import cubeRight from '../../assets/cube-right.png'
+import cubeLeft from '../../assets/cube-left.png'
 
 
 const Header = () => {
@@ -19,8 +22,14 @@ const Header = () => {
       </div>
 
       <div className='circle-container'>
-        <img src={circle} id='circle'/>
-        <img src={circle} id='circle'/>
+        <div className='circle-container-for-pluses'>
+          <img src={circle} id='circle'/>
+          <img src={pluses} id='circle-container-pluses'/>
+        </div>
+        <div className='circle-container-for-pluses'>
+          <img src={circle} id='circle'/>
+          <img src={pluses} id='circle-container-pluses'/>
+        </div>
       </div>
 
       <div className='header-second-layer' id='layer'>
@@ -28,10 +37,16 @@ const Header = () => {
         
         <div className='second-layer-text'>
           <h1 className='text-title'>DISCOVER</h1>
-          <p className='text-body'>DICK</p>
+          <p className='text-body'>AMAZINGNESS</p>
         </div>
 
         <img src={pointingTriangleLeft} id='pointing-triangle'/>
+      </div>
+
+      <div className='header-third-layer' id='layer'>
+        <img src={cubeLeft} id='cube'/>
+        <img src={underline} id='underline' />
+        <img src={cubeRight} id='cube'/>
       </div>
     </div>
   )

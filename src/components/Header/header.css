@@ -7,7 +7,7 @@
     width: 100%;
     display: flex;
     align-items: center;
-    gap: 5rem;
+    gap: 2rem;
     text-align: center;
     padding-top: 2rem;
     flex-direction: column;
@@ -17,8 +17,8 @@
     position: absolute;
     z-index: -1;
     width: 100%;
+    height: 100%;
     top: 0;
-    height: 90%
 }
 
 #header-asset {
@@ -45,16 +45,6 @@
     width: var(--small-layer-size);
 }
 
-.circle-container {
-    position: absolute;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    padding-right: 4rem;
-    padding-left: 4rem;
-    margin-top: 4rem;
-}
-
 /* Second layer */
 .header-second-layer {
     gap: 7rem;
@@ -67,8 +57,9 @@
     font-size: 5em;
 }
 .text-body {
-    font-size: 4em;
+    font-size: 5em;
     color: var(--text-color);
+    font-family: secondary-font;
 }
 #circle {
     width: calc(var(--small-layer-size) + 5rem);
@@ -90,12 +81,55 @@
         font-size: 3em;
     }
     .text-body {
-        font-size: 2em;
+        font-size: 2.5em;
     }
     #pointing-triangle {
         display: none;
     }
 }
+
+/* Third layer */
+.header-third-layer {
+    gap: 9rem;
+}
+#underline {
+    width: 30rem;
+    height: 2.5rem;
+}
+#cube {
+    width: calc(var(--small-layer-size) + 1rem);
+}
+
+@media (max-width: 40em) {
+    #underline {
+        width: 20rem;
+        height: auto;
+    }
+    #cube {
+        display: none;
+    }
+}
+
+/* Loose assets */
+.circle-container {
+    position: absolute;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding-right: 4rem;
+    padding-left: 4rem;
+    margin-top: 4rem;
+}
+.circle-container-for-pluses {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#circle-container-pluses {
+    width: var(--small-layer-size);
+    margin-top: 4rem;
+}
+
 
 
 @media (max-width: 1400px) {
