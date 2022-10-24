@@ -1,11 +1,13 @@
 import React from 'react'
 import './header.css'
-import img1 from '../../assets/stars.png';
+import background from '../../assets/bg.jpg'
+
 
 const Header = () => {
   return (
     <div className='header-container'>
-        <h1>IMAGINE A PLACE...</h1>
+      <img src={background} className='header-bg'/>
+      <h1>DELIVERING A WEBSITE TO YOU IN EASE</h1>
     </div>
   )
 }

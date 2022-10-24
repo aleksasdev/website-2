@@ -1,6 +1,6 @@
 @font-face {
   font-family: 'main';
-  src: url(./assets/uni-sans.otf);
+  src: url(./assets/dela-gothic-regular.ttf);
 }
 @font-face {
   font-family: 'main-bold';
@@ -22,11 +22,12 @@
 
 h1 {
   font-family: main-heavy;
+  font-size: 3em;
 }
 
 :root {
   --text-color: 255, 255, 255;
-  --primary-color: 35, 39, 42;
+  --primary-color: 255, 237, 134;
   --secondary-color: 86, 99, 247;
   --third-color: 88, 101, 242;
 }

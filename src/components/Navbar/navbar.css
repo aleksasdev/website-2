@@ -1,13 +1,28 @@
 .navbar-container {
-    height: 4rem;
-    width: 100%;
-    background-color: rgb(var(--primary-color));
+    height: 5rem;
+    width: 90%;
+    background-color: transparent;
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    padding-right: 3rem;
+    padding-left: 3rem;
+    padding-top: 0.5rem;
+    border: 2px solid rgb(var(--primary-color));
+    border-top: none;
+    margin-left: 5%;
+    margin-right: 5%;
 }
 
-.navbar-button {
-    height: 80%;
-    width: 2rem;
-    background-color: var(--text-color);
+#nav-button {
+    font-size: 0.75em;
+    cursor: pointer;
+}
+#nav-button:hover {
+    text-decoration: underline;
+}
+
+.nav-buttons-container {
+    display: flex;
+    gap: 4rem;
 }
