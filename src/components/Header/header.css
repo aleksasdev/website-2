@@ -61,6 +61,10 @@
     color: var(--text-color);
     font-family: secondary-font;
 }
+.text-title:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+}
 #circle {
     width: calc(var(--small-layer-size) + 5rem);
 }
@@ -90,14 +94,11 @@
 
 /* Third layer */
 .header-third-layer {
-    gap: 9rem;
+    gap: 14rem;
+    align-items: flex-start !important;
 }
 #underline {
-    width: 30rem;
-    height: 2.5rem;
-}
-#cube {
-    width: calc(var(--small-layer-size) + 1rem);
+    width: 34rem;
 }
 
 @media (max-width: 40em) {
@@ -129,20 +130,33 @@
 .cta-button-container {
     display: flex;
     justify-content: center;
+    align-items: center;
+    margin-top: 3rem;
+    gap: 4rem;
+    letter-spacing: 0.2em;
 }
 .cta-button {
-    cursor: pointer;
-    margin-top: 3rem;
-    letter-spacing: 0.2em;
     color: rgb(var(--third-color));
     background-color: rgb(var(--secondary-color));
     padding: 0.5rem;
 }
 .cta-button:hover {
+    cursor: pointer;
     transform: scale(1.1);
 }
-#trippy-triangle {
-    width: 20rem;
+.cta-second-button:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+.balls-container img{
+    width: var(--small-layer-size);
+}
+.balls-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1.5rem;
+    margin-left: -5rem;
+    margin-right: -5rem;
 }
 @media (max-width: 1100px) {
     #trippy-triangle {
@@ -151,25 +165,60 @@
 }
 
 /* Loose assets */
-.circle-container {
+.loose-assets-container {
     position: absolute;
     width: 100%;
     display: flex;
-    justify-content: space-between;
-    padding-right: 4rem;
-    padding-left: 4rem;
-    margin-top: 4rem;
-}
-.circle-container-for-pluses {
-    display: flex;
     flex-direction: column;
-    align-items: center;
+    z-index: -1;
 }
-#circle-container-pluses {
-    width: var(--small-layer-size);
-    margin-top: 6rem;
+#loose-assets-items {
+    display: flex;
+    justify-content: space-between;
 }
 
+.loose-assets-circles img{
+    width: 11rem;
+}
+.loose-assets-pluses img {
+    width: var(--small-layer-size);
+}
+.loose-assets-cubes img {
+    width: calc(var(--small-layer-size) + 1rem);
+}
+#cube-right {
+    width: 8rem;
+}
+
+.loose-assets-circles {
+    padding-top: 4rem;
+    padding-left: 5rem;
+    padding-right: 5rem;
+}
+.loose-assets-pluses {
+    padding-top: 6rem;
+    padding-right: 5rem;
+    padding-left: 7rem;
+}
+.loose-assets-cubes {
+    justify-content: center !important;
+    gap: 59rem;
+}
+
+.loose-assets-trippy-triangles img{
+    width: 23rem;
+}
+.loose-assets-trippy-triangles {
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    padding-bottom: 4rem;
+    padding-right: 5rem;
+    padding-left: 5rem;
+    z-index: -1;
+}
 /* Animations */
 #circle:hover {
     cursor: pointer;

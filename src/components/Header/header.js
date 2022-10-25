@@ -11,7 +11,7 @@ import cubeRight from '../../assets/cube-right.png'
 import cubeLeft from '../../assets/cube-left.png'
 import trippyTriangleRight from '../../assets/trippy-triangle-right.png'
 import trippyTriangleLeft from '../../assets/trippy-triangle-left.png'
-
+import ball from '../../assets/ball.png';
 
 const Header = () => {
   return (
@@ -23,16 +23,30 @@ const Header = () => {
         <img src={pluses}/>
       </div>
 
-      <div className='circle-container'>
-        <div className='circle-container-for-pluses'>
-          <img src={circle} id='circle'/>
-          <img src={pluses} id='circle-container-pluses'/>
+      {/* Loose assets */}
+      <div className='loose-assets-container'>
+        <div className='loose-assets-circles' id='loose-assets-items'>
+          <img src={circle}/>
+          <img src={circle}/>
         </div>
-        <div className='circle-container-for-pluses'>
-          <img src={circle} id='circle'/>
-          <img src={pluses} id='circle-container-pluses'/>
+
+        <div className='loose-assets-pluses' id='loose-assets-items'>
+          <img src={pluses}/>
+          <img src={pluses}/>
+        </div>
+
+        <div className='loose-assets-cubes' id='loose-assets-items'>
+          <img src={cubeLeft}/>
+          <img src={cubeRight} id='cube-right'/>
         </div>
       </div>
+
+      <div className='loose-assets-trippy-triangles'>
+          <img src={trippyTriangleLeft}/>
+          <img src={trippyTriangleRight}/>
+      </div>
+
+      {/* --Loose assets-- */}
 
       <div className='header-second-layer' id='layer'>
         <img src={pointingTriangleRight} id='pointing-triangle'/>
@@ -46,21 +60,26 @@ const Header = () => {
       </div>
 
       <div className='header-third-layer' id='layer'>
-        <img src={cubeLeft} id='cube'/>
         <img src={underline} id='underline' />
-        <img src={cubeRight} id='cube'/>
       </div>
 
       <div className='header-fourth-layer' id='layer'>
-        <img src={trippyTriangleLeft} id='trippy-triangle'/>
+        
         <div>
           <h2 className='text-subtitle'>WORK WITH ME</h2>
           <p className='text-sub-body'>You really should just because I said so. Bla bla bla</p>
+          
           <div className='cta-button-container'>
             <div className='cta-button'>MY WORK</div>
+            <p className='cta-second-button'>LEARN MORE</p>
+          </div>
+
+          <div className='balls-container'>
+            <img src={ball}/>
+            <img src={ball}/>
           </div>
         </div>
-        <img src={trippyTriangleRight} id='trippy-triangle'/>
+
       </div>
     </div>
   )
