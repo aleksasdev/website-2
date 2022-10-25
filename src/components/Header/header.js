@@ -78,6 +78,8 @@ const Header = () => {
             <img src={ball}/>
             <img src={ball}/>
           </div>
+
+          <p className='last-remaining-text'>BE AMAZED</p>
         </div>
 
       </div>
