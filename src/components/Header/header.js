@@ -18,9 +18,9 @@ const Header = () => {
     <div className='header-container'>
       <img src={background} className='header-bg'/>
       <div className='header-first-layer' id='layer'>
-        <img src={pluses}/>
+        <img src={pluses} className='pluses'/>
         <img src={smallTriangle}/>
-        <img src={pluses}/>
+        <img src={pluses} className='pluses'/>
       </div>
 
       {/* Loose assets */}
