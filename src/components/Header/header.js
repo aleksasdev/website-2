@@ -9,6 +9,8 @@ import pointingTriangleLeft from '../../assets/pointing-triangle-left.png'
 import underline from '../../assets/underline.png'
 import cubeRight from '../../assets/cube-right.png'
 import cubeLeft from '../../assets/cube-left.png'
+import trippyTriangleRight from '../../assets/trippy-triangle-right.png'
+import trippyTriangleLeft from '../../assets/trippy-triangle-left.png'
 
 
 const Header = () => {
@@ -47,6 +49,18 @@ const Header = () => {
         <img src={cubeLeft} id='cube'/>
         <img src={underline} id='underline' />
         <img src={cubeRight} id='cube'/>
+      </div>
+
+      <div className='header-fourth-layer' id='layer'>
+        <img src={trippyTriangleLeft} id='trippy-triangle'/>
+        <div>
+          <h2 className='text-subtitle'>WORK WITH ME</h2>
+          <p className='text-sub-body'>You really should just because I said so. Bla bla bla</p>
+          <div className='cta-button-container'>
+            <div className='cta-button'>MY WORK</div>
+          </div>
+        </div>
+        <img src={trippyTriangleRight} id='trippy-triangle'/>
       </div>
     </div>
   )

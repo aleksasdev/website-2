@@ -8,7 +8,7 @@
 }
 @font-face {
   font-family: 'third-font';
-  src: url(./assets/uni-sans-heavy.otf);
+  src: url(./assets/LexendMega-Regular.ttf);
 }
 
 
@@ -24,7 +24,7 @@
   --text-color: 255, 255, 255;
   --primary-color: 255, 237, 134;
   --secondary-color: 248, 242, 169;
-  --third-color: 88, 101, 242;
+  --third-color: 255, 81, 192;
 }
 
 @media (min-width: 2000px) {
