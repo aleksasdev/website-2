@@ -27,8 +27,14 @@
   --third-color: 255, 81, 192;
 }
 
+/* Adjusting font sizes */
 @media (min-width: 2000px) {
   html {
-    font-size: 1.5em;
+    font-size: 1.4em;
+  }
+}
+@media (max-width: 40em) {
+  html {
+    font-size: 0.9em;
   }
 }

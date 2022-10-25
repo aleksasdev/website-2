@@ -106,9 +106,6 @@
         width: 20rem;
         height: auto;
     }
-    #cube {
-        display: none;
-    }
 }
 
 /* Fourth layer */
@@ -163,8 +160,20 @@
     padding-top: 2rem;
     letter-spacing: 0.2em;
 }
-@media (max-width: 1100px) {
-    #trippy-triangle {
+@media (max-width: 40em) {
+    .balls-container {
+        display: none;
+    }
+    .text-sub-body {
+        max-width: 26rem;
+    }
+    .text-subtitle {
+        font-size: 1.2em;
+    }
+    .cta-second-button {
+        display: none;
+    }
+    .last-remaining-text {
         display: none;
     }
 }
@@ -224,6 +233,15 @@
     padding-left: 5rem;
     z-index: -1;
 }
+@media (max-width: 1500px) {
+    .loose-assets-container {
+        display: none;
+    }
+    .loose-assets-trippy-triangles {
+        display: none;
+    }
+}
+
 /* Animations */
 #circle:hover {
     cursor: pointer;
@@ -236,10 +254,3 @@
         display: none;
     }
 }
-
-/* @media (min-width: 1940px) {
-    .header-container {
-        background-size: cover;
-        background-position: 0 -26rem;
-    }
-} */
