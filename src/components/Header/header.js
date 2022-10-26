@@ -67,7 +67,7 @@ const Header = () => {
         
         <div>
           <h2 className='text-subtitle'>WORK WITH ME</h2>
-          <p className='text-sub-body'>You really should just because I said so. Bla bla bla</p>
+          <p className='text-sub-body'>Reasons why? Because I can produce results, I'm competent and capable to deliver massive amounts of value to you by building you a website or a piece of software, you can truly count on me.</p>
           
           <div className='cta-button-container'>
             <div className='cta-button'>MY WORK</div>

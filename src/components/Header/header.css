@@ -118,7 +118,6 @@
     align-items: flex-start !important;
     width: 100%;
     gap: 5rem;
-    padding-top: 2rem;
 }
 .text-subtitle {
     letter-spacing: 0.4em;
@@ -158,12 +157,11 @@
 .balls-container {
     display: flex;
     justify-content: space-between;
-    margin-top: 1.5rem;
-    margin-left: -6rem;
-    margin-right: -6rem;
+    margin-top: -1.5rem;
+    margin-left: -8rem;
+    margin-right: -8rem;
 }
 .last-remaining-text {
-    padding-top: 2rem;
     letter-spacing: 0.2em;
 }
 @media (max-width: 40em) {
@@ -175,6 +173,9 @@
     }
     .text-subtitle {
         font-size: 1.2em;
+    }
+    .cta-button-container {
+        margin-top: 1rem;
     }
     .cta-second-button {
         display: none;
@@ -194,9 +195,6 @@
 #loose-assets-items {
     display: flex;
     justify-content: space-between;
-}
-#loose-assets-items:not(.loose-assets-pluses):not(.loose-assets-circles) img:hover {
-    transform: scale(1.05);
 }
 
 .loose-assets-circles img{
@@ -229,9 +227,6 @@
 
 .loose-assets-trippy-triangles img{
     width: 23rem;
-}
-.loose-assets-trippy-triangles img:hover{
-    transform: scale(1.05);
 }
 .loose-assets-trippy-triangles {
     display: flex;

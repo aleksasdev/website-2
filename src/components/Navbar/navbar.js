@@ -1,5 +1,8 @@
 import React from 'react'
 import './navbar.css'
+import fbIcon from '../../assets/fb.png';
+import igIcon from '../../assets/ig.png';
+import ytIcon from '../../assets/yt.png';
 
 const Navbar = () => {
   return (
@@ -12,7 +15,11 @@ const Navbar = () => {
           <div id='nav-button'>CONTACT</div>
 
         </div>
-        <div className='nav-icons'>TEST</div>
+        <div className='nav-icons'>
+          <img src={fbIcon}/>
+          <img src={igIcon}/>
+          <img src={ytIcon}/>
+        </div>
     </div>
   )
 }
